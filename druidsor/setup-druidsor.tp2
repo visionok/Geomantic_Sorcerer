@@ -263,6 +263,36 @@ COPY  ~druidsor/CREs/CA#EOP.cre~  ~override/CA#EOP.cre~
     SAY NAME1 @316
     SAY NAME2 @316
 
+// spells from iwdee/iwdification/scs
+OUTER_SET check = IDS_OF_SYMBOL(spell CLERIC_SMASHING_WAVE)
+ACTION_IF check > 0 BEGIN // clone spell if present 
+
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = CLERIC_SMASHING_WAVE RET spell_res END // get resource
+  LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = ~%spell_res%~ destination = ~ca#dstce~ RET_ARRAY cd_clone_spell_array END
+
+END ELSE BEGIN   
+
+  COPY  ~druidsor/SPLs/CA#DSTCE.spl~  ~override/CA#DSTCE.spl~ // smashing wave
+      SAY NAME1 @307
+      SAY NAME2 @307
+      LPF ALTER_HEADER INT_VAR projectile = ~%CA#WAVE%~ END 
+      
+END 
+
+OUTER_SET check = IDS_OF_SYMBOL(spell CLERIC_WHIRLWIND)
+ACTION_IF check > 0 BEGIN // clone spell if present 
+
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = CLERIC_WHIRLWIND RET spell_res END // get resource
+  LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = ~%spell_res%~ destination = ~ca#dstck~ RET_ARRAY cd_clone_spell_array END
+
+END ELSE BEGIN   
+
+COPY  ~druidsor/SPLs/CA#DSTCK.spl~  ~override/CA#DSTCK.spl~ // whirlwind
+    SAY NAME1 @303
+    SAY NAME2 @303
+      
+END 
+
 // Add remaining newly made spells
 
 COPY  ~druidsor/SPLs/CA#DSWS.spl~ ~override/CA#DSWS.spl~
@@ -465,9 +495,6 @@ COPY  ~druidsor/SPLs/CA#DSTCA.spl~  ~override/CA#DSTCA.spl~
     SAY NAME1 @300
     SAY NAME2 @300
     LPF ALTER_HEADER INT_VAR projectile = ~%CA#TCICE%~ END 
-COPY  ~druidsor/SPLs/CA#DSTCK.spl~  ~override/CA#DSTCK.spl~
-    SAY NAME1 @303
-    SAY NAME2 @303
 COPY  ~druidsor/SPLs/CA#DSTCB.spl~  ~override/CA#DSTCB.spl~
     SAY NAME1 @304
     SAY NAME2 @304
@@ -477,10 +504,6 @@ COPY  ~druidsor/SPLs/CA#DSTCC.spl~  ~override/CA#DSTCC.spl~
 COPY  ~druidsor/SPLs/CA#DSTCD.spl~  ~override/CA#DSTCD.spl~
     SAY NAME1 @306
     SAY NAME2 @306
-COPY  ~druidsor/SPLs/CA#DSTCE.spl~  ~override/CA#DSTCE.spl~
-    SAY NAME1 @307
-    SAY NAME2 @307
-    LPF ALTER_HEADER INT_VAR projectile = ~%CA#WAVE%~ END 
 COPY  ~druidsor/SPLs/CA#DSTCF.spl~  ~override/CA#DSTCF.spl~
     SAY NAME1 @308
     SAY NAME2 @308
