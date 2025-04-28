@@ -68,6 +68,7 @@ COPY ~druidsor/2das~              ~override~
      ~druidsor/bams~              ~override~
      ~druidsor/effs~              ~override~
      ~druidsor/vvcs~              ~override~
+     ~druidsor/cres/ca#ageo.cre~  ~override/ca#ageo.cre~ // invisible invulnerable creature to cast spell to turn player1 into a geomantic sorcerer for ToB and Tutu (TEMPORARY)
      ~druidsor/itms/ca#wel3.itm~  ~override/ca#wel3.itm~
      ~druidsor/spls/ca#dswsa.spl~ ~override/ca#dswsa.spl~
      ~druidsor/spls/ca#towi.spl~  ~override/ca#towi.spl~
@@ -261,9 +262,6 @@ COPY  ~druidsor/CREs/CA#DSFE.cre~ ~override/CA#DSFE.cre~
 COPY  ~druidsor/CREs/CA#EOP.cre~  ~override/CA#EOP.cre~
     SAY NAME1 @316
     SAY NAME2 @316
-COPY  ~druidsor/CREs/CA#AGEO.cre~ ~override/CA#AGEO.cre~ // invisible invulnerable creature to cast spell to turn player1 into a geomantic sorcerer for ToB and Tutu (TEMPORARY)
-    WRITE_ASCII 0x248 ~ca#ageo~ #8
-
 
 // Add remaining newly made spells
 
@@ -271,7 +269,7 @@ COPY  ~druidsor/SPLs/CA#DSWS.spl~ ~override/CA#DSWS.spl~
     SAY NAME1 @200
     SAY NAME2 @200
     SAY UNIDENTIFIED_DESC @201
-    WRITE_SHORT 0x98 ~%CA#WAVE%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#WAVE%~ END 
 COPY  ~druidsor/SPLs/CA#DSTO.spl~ ~override/CA#DSTO.spl~
     SAY NAME1 @202
     SAY NAME2 @202
@@ -366,7 +364,7 @@ COPY  ~druidsor/SPLs/CA#SCM.spl~  ~override/CA#SCM.spl~
 COPY  ~druidsor/SPLs/CA#RM.spl~ ~override/CA#RM.spl~
     SAY NAME1 @256
     SAY NAME2 @256
-    WRITE_SHORT 0x98 ~%CA#RMBA%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#RMBA%~ END 
 COPY  ~druidsor/SPLs/CA#BSM.spl~  ~override/CA#BSM.spl~
     SAY NAME1 @257
     SAY NAME2 @257
@@ -406,8 +404,8 @@ COPY  ~druidsor/SPLs/CA#DSMGI.spl~  ~override/CA#DSMGI.spl~
 COPY  ~druidsor/SPLs/CA#DSDBE.spl~  ~override/CA#DSDBE.spl~
     SAY NAME1 @275
     SAY NAME2 @275
-    SAY UNIDENTIFIED_DESC @276
-    WRITE_SHORT 0x98 ~%CA#DBE%~
+    SAY UNIDENTIFIED_DESC @276    
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#DBE%~ END 
 COPY  ~druidsor/SPLs/CA#DSIE.spl~ ~override/CA#DSIE.spl~
     SAY NAME1 @277
     SAY NAME2 @277
@@ -466,7 +464,7 @@ COPY  ~druidsor/SPLs/CA#DSTCG.spl~  ~override/CA#DSTCG.spl~
 COPY  ~druidsor/SPLs/CA#DSTCA.spl~  ~override/CA#DSTCA.spl~
     SAY NAME1 @300
     SAY NAME2 @300
-    WRITE_SHORT   0x98 ~%CA#TCICE%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#TCICE%~ END 
 COPY  ~druidsor/SPLs/CA#DSTCK.spl~  ~override/CA#DSTCK.spl~
     SAY NAME1 @303
     SAY NAME2 @303
@@ -482,7 +480,7 @@ COPY  ~druidsor/SPLs/CA#DSTCD.spl~  ~override/CA#DSTCD.spl~
 COPY  ~druidsor/SPLs/CA#DSTCE.spl~  ~override/CA#DSTCE.spl~
     SAY NAME1 @307
     SAY NAME2 @307
-    WRITE_SHORT   0x98 ~%CA#WAVE%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#WAVE%~ END 
 COPY  ~druidsor/SPLs/CA#DSTCF.spl~  ~override/CA#DSTCF.spl~
     SAY NAME1 @308
     SAY NAME2 @308
@@ -505,7 +503,7 @@ COPY  ~druidsor/SPLs/CA#UOM.spl~  ~override/CA#UOM.spl~
 COPY  ~druidsor/SPLs/CA#UOMA.spl~ ~override/CA#UOMA.spl~
     SAY NAME1 @311
     SAY NAME2 @311
-    WRITE_SHORT   0x98  ~%CA#UOM%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#UOM%~ END 
 COPY  ~druidsor/SPLs/CA#UOMB.spl~ ~override/CA#UOMB.spl~
     SAY 0xfe @313
 COPY  ~druidsor/SPLs/CA#AF.spl~ ~override/CA#AF.spl~
@@ -528,35 +526,33 @@ COPY  ~druidsor/SPLs/CA#EPEP2.spl~  ~override/CA#EPEP2.spl~
 COPY  ~druidsor/SPLs/CA#EPEP3.spl~  ~override/CA#EPEP3.spl~
     SAY NAME1 @322
     SAY NAME2 @322
-    SAY 0x15e @323
-    SAY 0x18e @324
-    SAY 0x1be @325
-    SAY 0x1ee @326
-    SAY 0x21e @327
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1 parameter1 = RESOLVE_STR_REF(@323) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 2 parameter1 = RESOLVE_STR_REF(@324) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 3 parameter1 = RESOLVE_STR_REF(@325) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 4 parameter1 = RESOLVE_STR_REF(@326) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 5 parameter1 = RESOLVE_STR_REF(@327) END
 COPY  ~druidsor/SPLs/CA#EPES.spl~ ~override/CA#EPES.spl~
     SAY NAME1 @328
     SAY NAME2 @328
 COPY  ~druidsor/SPLs/CA#EPBE.spl~ ~override/CA#EPBE.spl~
     SAY NAME1 @329
     SAY NAME2 @329
-    WRITE_SHORT   0x98   ~%CA#BL%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#BL%~ END
 COPY  ~druidsor/SPLs/CA#FC.spl~ ~override/CA#FC.spl~
     SAY NAME1 @331
     SAY NAME2 @331
     SAY UNIDENTIFIED_DESC @332
-    WRITE_SHORT   0x98 ~%CA#FCEXP%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#FCEXP%~ END
 COPY  ~druidsor/SPLs/CA#FCC.spl~  ~override/CA#FCC.spl~
-    WRITE_SHORT   0x98 ~%CA#FCEXP%~
-COPY  ~druidsor/SPLs/CA#FCD.spl~  ~override/CA#FCD.spl~
-    WRITE_SHORT   0x98 ~%CA#FCEXP%~
+      ~druidsor/SPLs/CA#FCD.spl~  ~override/CA#FCD.spl~
+      ~druidsor/SPLs/CA#FCK.spl~  ~override/CA#FCK.spl~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#FCEXP%~ END
 COPY  ~druidsor/SPLs/CA#FCI.spl~  ~override/CA#FCI.spl~
-    WRITE_SHORT   0x98 ~%CA#FCFIR%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#FCFIR%~ END
 COPY  ~druidsor/SPLs/CA#FCL.spl~  ~override/CA#FCL.spl~
-    WRITE_SHORT   0x98 ~%CA#FCMET%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#FCMET%~ END
 COPY  ~druidsor/SPLs/CA#FCN.spl~  ~override/CA#FCN.spl~
-    WRITE_SHORT   0x98 ~%CA#DBE%~
-COPY  ~druidsor/SPLs/CA#FCK.spl~  ~override/CA#FCK.spl~
-    WRITE_SHORT   0x98 ~%CA#FCEXP%~
+    LPF ALTER_HEADER INT_VAR projectile = ~%CA#DBE%~ END
 
 // Clone and modify existing priest spells for this kit as arcane spells
 

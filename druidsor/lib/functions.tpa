@@ -36,3 +36,5 @@ DEFINE_PATCH_MACRO ~level_number~ BEGIN
 END
 
 INCLUDE ~druidsor/lib/cd_clone_spell_bulk_first.tpa~
+
+INCLUDE ~druidsor/lib/alter_header.tpa~
