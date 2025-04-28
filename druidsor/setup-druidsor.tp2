@@ -51,8 +51,9 @@ LANGUAGE ~Spanish (Translation by lisandro)~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @1 /*Start with displaying mod component Geomantic Sorcerer Remake*/
+BEGIN @1  DESIGNATED 0 /*Start with displaying mod component Geomantic Sorcerer Remake*/
 REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet bgt iwdee bgee~ @2 /* TOB/EE Check prior to compiling.*/
+LABEL ~ca#_geomantic_sorcerer~
 
 // ~Fix~ to the meteor swarm projectile.
 COPY_EXISTING ~metswarm.pro~ ~override~
@@ -762,9 +763,10 @@ END
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @20 /*Portraits for Druidic Shapeshifting*/    //1
+BEGIN @20 DESIGNATED 1 /*Portraits for Druidic Shapeshifting*/    //1
 REQUIRE_COMPONENT ~setup-druidsor.tp2~ ~0~ @12 //Need main kit installed before you can install this component.
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits~
 
 // copy the shapeshfiting spells with portrait changing effects
 COPY  ~druidsor/portraits/spells/CA#DSBE.spl~ ~override/CA#DSBE.spl~
@@ -805,28 +807,25 @@ COPY    ~druidsor/portraits/spells/CA#STLOS.spl~ ~override/CA#STLOS.spl~ // stat
 
 
 
-BEGIN @30 //Male PCs     2
+BEGIN @30 DESIGNATED 2 //Male PCs     2
 SUBCOMPONENT @20
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~1~) @12 /*Portraits for Druidic Shapeshifting*/
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_2~
 
-// this file does nothing, it just allows other mods to detect this component
-COPY_EXISTING ~sw1h01.itm~ ~override/malepc.g3~
-
-BEGIN @31 // Female PCs      3
+BEGIN @31 DESIGNATED 3 // Female PCs      3
 SUBCOMPONENT @20
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~1~) @12 /*Portraits for Druidic Shapeshifting*/
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
-
-// this file does nothing, it just allows other mods to detect this component
-COPY_EXISTING ~sw1h01.itm~ ~override/femalepc.g3~
+LABEL ~ca#_geomantic_sorcerer_portraits_3~
 
 /// Options for Male Humanoid Portraits
 
-BEGIN @60 /*mCast2 (Lightning Caster)*/       //4
+BEGIN @60 DESIGNATED 4 /*mCast2 (Lightning Caster)*/       //4
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_4~
 
 COPY    ~druidsor/portraits/male/humanoid/mcast2m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mcast2m.bmp~      ~portraits/geosorl.bmp~
@@ -834,80 +833,88 @@ COPY    ~druidsor/portraits/male/humanoid/mcast2s.bmp~      ~override/geosors.bm
 COPY    ~druidsor/portraits/male/humanoid/mcast2s.bmp~      ~portraits/geosors.bmp~
 
 
-BEGIN @61 /*mCast5 (Blond Hooded Caster)*/      //5
+BEGIN @61 DESIGNATED 5 /*mCast5 (Blond Hooded Caster)*/      //5
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_5~
 
 COPY    ~druidsor/portraits/male/humanoid/mcast5m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mcast5m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mcast5s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mcast5s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @62 /*mDruid2 (Druid with face paint) - By Amaurea*/    //6
+BEGIN @62 DESIGNATED 6 /*mDruid2 (Druid with face paint) - By Amaurea*/    //6
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_6~
 
 COPY    ~druidsor/portraits/male/humanoid/mdruid2m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mdruid2m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mdruid2s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mdruid2s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @63 /*mDruid (Druid in Vegetation)*/        //7
+BEGIN @63 DESIGNATED 7 /*mDruid (Druid in Vegetation)*/        //7
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_7~
 
 COPY    ~druidsor/portraits/male/humanoid/mdruidm.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mdruidm.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mdruids.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mdruids.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @64 /*mElf1 (Slightly dark skinned elf)*/   //8
+BEGIN @64 DESIGNATED 8 /*mElf1 (Slightly dark skinned elf)*/   //8
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_8~
 
 COPY    ~druidsor/portraits/male/humanoid/melf1m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf1m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf1s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf1s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @65 /*mElf2 (Elf caster type, open collar) - By Amaurea*/    //9
+BEGIN @65 DESIGNATED 9 /*mElf2 (Elf caster type, open collar) - By Amaurea*/    //9
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_9~
 
 COPY    ~druidsor/portraits/male/humanoid/melf2m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf2m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf2s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf2s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @66 /*mElf3 (Elf caster type, closeup) - By Amaurea*/    //10
+BEGIN @66 DESIGNATED 10 /*mElf3 (Elf caster type, closeup) - By Amaurea*/    //10
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_10~
 
 COPY    ~druidsor/portraits/male/humanoid/melf3m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf3m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf3s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/male/humanoid/melf3s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @67 /*mGeo01 (Caster with sigils and runes) - By Amedyr*/    //11
+BEGIN @67 DESIGNATED 11 /*mGeo01 (Caster with sigils and runes) - By Amedyr*/    //11
 SUBCOMPONENT @40
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_11~
 
 COPY    ~druidsor/portraits/male/humanoid/mgeo01m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mgeo01m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mgeo01s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/male/humanoid/mgeo01s.bmp~      ~portraits/geosors.bmp~
 
-//BEGIN @68 /*mHum7 (Red headed human) - By Amaurea*/    //12
+//BEGIN @68 DESIGNATED 50 /*mHum7 (Red headed human) - By Amaurea*/    //12
 //SUBCOMPONENT @40
 //REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Humanoid Portrait*/ // need male PC choice in earlier install order
 //REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+//LABEL ~ca#_geomantic_sorcerer_portraits_50~
 
 //COPY    ~druidsor/portraits/male/humanoid/mhum7m.bmp~      ~override/geosorl.bmp~
 //COPY    ~druidsor/portraits/male/humanoid/mhum7m.bmp~      ~portraits/geosorl.bmp~
@@ -917,90 +924,99 @@ COPY    ~druidsor/portraits/male/humanoid/mgeo01s.bmp~      ~portraits/geosors.b
 
 //////////////////// Options for Female Humanoid Portraits
 
-BEGIN @21 /*fCast02 (Green Hooded, possibly elven/half-elven)*/    //13
+BEGIN @21 DESIGNATED 12 /*fCast02 (Green Hooded, possibly elven/half-elven)*/    //13
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_12~
 
 COPY    ~druidsor/portraits/female/humanoid/fcast02m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast02m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast02s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast02s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @22 /*fCast15 (Tatooed caster)*/                 //14
+BEGIN @22 DESIGNATED 13 /*fCast15 (Tatooed caster)*/                 //14
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_13~
 
 COPY    ~druidsor/portraits/female/humanoid/fcast15m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast15m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast15s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast15s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @23 /*fCast16 (With metal ornamentation)*/      //15
+BEGIN @23 DESIGNATED 14 /*fCast16 (With metal ornamentation)*/      //15
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_14~
 
 COPY    ~druidsor/portraits/female/humanoid/fcast16m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast16m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast16s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast16s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @24 /*fCast18 (Brown Hair human/half-elf)*/      //16
+BEGIN @24 DESIGNATED 15 /*fCast18 (Brown Hair human/half-elf)*/      //16
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13/*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_15~
 
 COPY    ~druidsor/portraits/female/humanoid/fcast18m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast18m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast18s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fcast18s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @25 /*fDruid7 (Druid with headdress)*/          //17
+BEGIN @25 DESIGNATED 16 /*fDruid7 (Druid with headdress)*/          //17
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_16~
 
 COPY    ~druidsor/portraits/female/humanoid/fdruid7m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fdruid7m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fdruid7s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fdruid7s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @26 /*fDruid9 (Red headed druid type in brown robe)*/   //18
+BEGIN @26 DESIGNATED 17 /*fDruid9 (Red headed druid type in brown robe)*/   //18
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_17~
 
 COPY    ~druidsor/portraits/female/humanoid/fdruid9m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fdruid9m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fdruid9s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fdruid9s.bmp~      ~portraits/geosors.bmp~
 
-//BEGIN @27 /*fGeo01 (DESCRIPTION) - By Amedyr*/
+//BEGIN @27 DESIGNATED 51 /*fGeo01 (DESCRIPTION) - By Amedyr*/
 //SUBCOMPONENT @51
 //REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 //REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+//LABEL ~ca#_geomantic_sorcerer_portraits_51~
 /*
 COPY    ~druidsor/portraits/female/humanoid/fgeo01m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fgeo01m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fgeo01s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fgeo01s.bmp~      ~portraits/geosors.bmp~*/
 
-BEGIN @28 /*fHaEl1 (Elf/Half-Elf caster type) - By Amaurea*/    //19
+BEGIN @28 DESIGNATED 18 /*fHaEl1 (Elf/Half-Elf caster type) - By Amaurea*/    //19
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_18~
 
 COPY    ~druidsor/portraits/female/humanoid/fhael1m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fhael1m.bmp~      ~portraits/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fhael1s.bmp~      ~override/geosors.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fhael1s.bmp~      ~portraits/geosors.bmp~
 
-BEGIN @29 /*fHaEl2 (White robed half-elf/elf) - By Amaurea*/   //20
+BEGIN @29 DESIGNATED 19 /*fHaEl2 (White robed half-elf/elf) - By Amaurea*/   //20
 SUBCOMPONENT @51
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13 /*Female Humanoid Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_19~
 
 COPY    ~druidsor/portraits/female/humanoid/fhael2m.bmp~      ~override/geosorl.bmp~
 COPY    ~druidsor/portraits/female/humanoid/fhael2m.bmp~      ~portraits/geosorl.bmp~
@@ -1010,52 +1026,58 @@ COPY    ~druidsor/portraits/female/humanoid/fhael2s.bmp~      ~portraits/geosors
 
 ////////////////////////////Bear Form
 
-BEGIN @99 /*oBear1 (Dark Brown looking over shoulder) - By Amaurea*/  //21
+BEGIN @99 DESIGNATED 20 /*oBear1 (Dark Brown looking over shoulder) - By Amaurea*/  //21
 SUBCOMPONENT @42
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Bear form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_20~
 
 COPY    ~druidsor/portraits/animals/obear1m.bmp~      ~override/bearm.bmp~
 COPY    ~druidsor/portraits/animals/obear1s.bmp~      ~override/bears.bmp~
 
-BEGIN @70 /*oBear2 (Lighter Brown with partially open smiling mouth) - By Amaurea*/  //22
+BEGIN @70 DESIGNATED 21 /*oBear2 (Lighter Brown with partially open smiling mouth) - By Amaurea*/  //22
 SUBCOMPONENT @42
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Bear form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_21~
 
 COPY    ~druidsor/portraits/animals/obear2m.bmp~      ~override/bearm.bmp~
 COPY    ~druidsor/portraits/animals/obear2s.bmp~      ~override/bears.bmp~
 
-BEGIN @71 /*oBear3 (Serious looking bear) - By Amaurea*/         //23
+BEGIN @71 DESIGNATED 22 /*oBear3 (Serious looking bear) - By Amaurea*/         //23
 SUBCOMPONENT @42
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Bear form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_22~
 
 COPY    ~druidsor/portraits/animals/obear3m.bmp~      ~override/bearm.bmp~
 COPY    ~druidsor/portraits/animals/obear3s.bmp~      ~override/bears.bmp~
 
 
 //////////////////////////// Cat Form Portraits
-BEGIN @72 /*oCat1 (Yellow and orange mottled with white bib) - By Amaurea*/   //24
+BEGIN @72 DESIGNATED 23 /*oCat1 (Yellow and orange mottled with white bib) - By Amaurea*/   //24
 SUBCOMPONENT @43
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Cat Form Portrait*/  // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_23~
 
 COPY    ~druidsor/portraits/animals/ocat1m.bmp~      ~override/catm.bmp~
 COPY    ~druidsor/portraits/animals/ocat1s.bmp~      ~override/cats.bmp~
 
-BEGIN @73 /*oCat2 (Grey with black bands around neck) - By Amaurea*/      //25
+BEGIN @73 DESIGNATED 24 /*oCat2 (Grey with black bands around neck) - By Amaurea*/      //25
 SUBCOMPONENT @43
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Cat Form Portrait*/  // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_24~
 
 COPY    ~druidsor/portraits/animals/ocat2m.bmp~      ~override/catm.bmp~
 COPY    ~druidsor/portraits/animals/ocat2s.bmp~      ~override/cats.bmp~
 
-BEGIN @74 /*oCat3 (Grey) - By Amaurea*/           //26
+BEGIN @74 DESIGNATED 25 /*oCat3 (Grey) - By Amaurea*/           //26
 SUBCOMPONENT @43
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Cat Form Portrait*/  // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_25~
 
 COPY    ~druidsor/portraits/animals/ocat3m.bmp~      ~override/catm.bmp~
 COPY    ~druidsor/portraits/animals/ocat3s.bmp~      ~override/cats.bmp~
@@ -1064,26 +1086,29 @@ COPY    ~druidsor/portraits/animals/ocat3s.bmp~      ~override/cats.bmp~
 //////////////////////////// Dog Form Portraits
 
 
-BEGIN @75 /*oDog1 (Grey Hound) - By Amaurea*/       //27
+BEGIN @75 DESIGNATED 26 /*oDog1 (Grey Hound) - By Amaurea*/       //27
 SUBCOMPONENT @44
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Dog Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_26~
 
 COPY    ~druidsor/portraits/animals/odog1m.bmp~      ~override/dogm.bmp~
 COPY    ~druidsor/portraits/animals/odog1s.bmp~      ~override/dogs.bmp~
 
-BEGIN @76 /*oDog2 (Beige shaggy haired dog) - By Amaurea*/  //28
+BEGIN @76 DESIGNATED 27 /*oDog2 (Beige shaggy haired dog) - By Amaurea*/  //28
 SUBCOMPONENT @44
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Dog Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_27~
 
 COPY    ~druidsor/portraits/animals/odog2m.bmp~      ~override/dogm.bmp~
 COPY    ~druidsor/portraits/animals/odog2s.bmp~      ~override/dogs.bmp~
 
-BEGIN @77 /*oDog3 (Border Collie) - By Amaurea, picture of Skye by Caedwyr*/   //29
+BEGIN @77 DESIGNATED 28 /*oDog3 (Border Collie) - By Amaurea, picture of Skye by Caedwyr*/   //29
 SUBCOMPONENT @44
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Dog Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_28~
 
 COPY    ~druidsor/portraits/animals/odog3m.bmp~      ~override/dogm.bmp~
 COPY    ~druidsor/portraits/animals/odog3s.bmp~      ~override/dogs.bmp~
@@ -1092,26 +1117,29 @@ COPY    ~druidsor/portraits/animals/odog3s.bmp~      ~override/dogs.bmp~
 ////////////////////////////Leopard Form Portraits
 
 
-BEGIN @78 /*oLeop1 (Leopard) - By Amaurea*/       //30
+BEGIN @78 DESIGNATED 29 /*oLeop1 (Leopard) - By Amaurea*/       //30
 SUBCOMPONENT @45
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Leopard Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_29~
 
 COPY    ~druidsor/portraits/animals/oleop1m.bmp~      ~override/leopardm.bmp~
 COPY    ~druidsor/portraits/animals/oleop1s.bmp~      ~override/leopards.bmp~
 
-BEGIN @79 /*oLeop2 (Leopard with snow) - By Amaurea*/       //31
+BEGIN @79 DESIGNATED 30 /*oLeop2 (Leopard with snow) - By Amaurea*/       //31
 SUBCOMPONENT @45
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Leopard Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_30~
 
 COPY    ~druidsor/portraits/animals/oleop2m.bmp~      ~override/leopardm.bmp~
 COPY    ~druidsor/portraits/animals/oleop2s.bmp~      ~override/leopards.bmp~
 
-BEGIN @80 /*oLeop3 (Leopard with tongue) - By Amaurea*/  //32
+BEGIN @80 DESIGNATED 31 /*oLeop3 (Leopard with tongue) - By Amaurea*/  //32
 SUBCOMPONENT @45
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Leopard Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_31~
 
 COPY    ~druidsor/portraits/animals/oleop3m.bmp~      ~override/leopardm.bmp~
 COPY    ~druidsor/portraits/animals/oleop3s.bmp~      ~override/leopards.bmp~
@@ -1119,26 +1147,29 @@ COPY    ~druidsor/portraits/animals/oleop3s.bmp~      ~override/leopards.bmp~
 
 ////////////////////////////  Moose Form Portraits - Male
 
-BEGIN @81 /*omMoo1 (Moose with head down) - By Amaurea*/     //33
+BEGIN @81 DESIGNATED 32 /*omMoo1 (Moose with head down) - By Amaurea*/     //33
 SUBCOMPONENT @46
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11  /*Male Moose Form Portrait*/  // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_32~
 
 COPY    ~druidsor/portraits/male/moose/ommoo1m.bmp~      ~override/moosem.bmp~
 COPY    ~druidsor/portraits/male/moose/ommoo1s.bmp~      ~override/mooses.bmp~
 
-BEGIN @82 /*omMoo2 (Moose with head in profile) - By Amaurea*/  //34
+BEGIN @82 DESIGNATED 33 /*omMoo2 (Moose with head in profile) - By Amaurea*/  //34
 SUBCOMPONENT @46
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11 /*Male Moose Form Portrait*/  // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_33~
 
 COPY    ~druidsor/portraits/male/moose/ommoo2m.bmp~      ~override/moosem.bmp~
 COPY    ~druidsor/portraits/male/moose/ommoo2s.bmp~      ~override/mooses.bmp~
 
-BEGIN @83 /*omMoo3 (Chestnut coloured moose) - By Amaurea*/   //35
+BEGIN @83 DESIGNATED 34 /*omMoo3 (Chestnut coloured moose) - By Amaurea*/   //35
 SUBCOMPONENT @46
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~) @11  /*Male Moose Form Portrait*/  // need male PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_34~
 
 COPY    ~druidsor/portraits/male/moose/ommoo3m.bmp~      ~override/moosem.bmp~
 COPY    ~druidsor/portraits/male/moose/ommoo3s.bmp~      ~override/mooses.bmp~
@@ -1147,26 +1178,29 @@ COPY    ~druidsor/portraits/male/moose/ommoo3s.bmp~      ~override/mooses.bmp~
 //////////// Moose Form Portraits - Female
 
 
-BEGIN @84 /*ofMoo1 (Semi-profile perspective) - By Amaurea*/    //36
+BEGIN @84 DESIGNATED 35 /*ofMoo1 (Semi-profile perspective) - By Amaurea*/    //36
 SUBCOMPONENT @52
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13  /*Female Moose Form Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_35~
 
 COPY    ~druidsor/portraits/female/moose/ofmoo1m.bmp~      ~override/moosem.bmp~
 COPY    ~druidsor/portraits/female/moose/ofmoo1s.bmp~      ~override/mooses.bmp~
 
-BEGIN @85 /*ofMoo2 (Chestnut coloured moose with head down) - By Amaurea*/    //37
+BEGIN @85 DESIGNATED 36 /*ofMoo2 (Chestnut coloured moose with head down) - By Amaurea*/    //37
 SUBCOMPONENT @52
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13  /*Female Moose Form Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_36~
 
 COPY    ~druidsor/portraits/female/moose/ofmoo2m.bmp~      ~override/moosem.bmp~
 COPY    ~druidsor/portraits/female/moose/ofmoo2s.bmp~      ~override/mooses.bmp~
 
-BEGIN @86 /*ofMoo3 (Chestnut coloured moose with head up) - By Amaurea*/    //38
+BEGIN @86 DESIGNATED 37 /*ofMoo3 (Chestnut coloured moose with head up) - By Amaurea*/    //38
 SUBCOMPONENT @52
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @13  /*Female Moose Form Portrait*/ // need female PC choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_37~
 
 COPY    ~druidsor/portraits/female/moose/ofmoo3m.bmp~      ~override/moosem.bmp~
 COPY    ~druidsor/portraits/female/moose/ofmoo3s.bmp~      ~override/mooses.bmp~
@@ -1175,26 +1209,29 @@ COPY    ~druidsor/portraits/female/moose/ofmoo3s.bmp~      ~override/mooses.bmp~
 //////////////////////////// Panther Form Portraits
 
 
-BEGIN @87 /*oPan1 (Shiny black panther) - By Amaurea*/  //37
+BEGIN @87 DESIGNATED 38 /*oPan1 (Shiny black panther) - By Amaurea*/  //37
 SUBCOMPONENT @47
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Panther Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_38~
 
 COPY    ~druidsor/portraits/animals/opan1m.bmp~      ~override/pantherm.bmp~
 COPY    ~druidsor/portraits/animals/opan1s.bmp~      ~override/panthers.bmp~
 
-BEGIN @88 /*oPan2 (Panther with head cocked to one side) - By Amaurea*/  //38
+BEGIN @88 DESIGNATED 39 /*oPan2 (Panther with head cocked to one side) - By Amaurea*/  //38
 SUBCOMPONENT @47
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Panther Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_39~
 
 COPY    ~druidsor/portraits/animals/opan2m.bmp~      ~override/pantherm.bmp~
 COPY    ~druidsor/portraits/animals/opan2s.bmp~      ~override/panthers.bmp~
 
-BEGIN @89 /*oPan3 (Panther with mouth partially open) - By Amaurea*/   //39
+BEGIN @89 DESIGNATED 40 /*oPan3 (Panther with mouth partially open) - By Amaurea*/   //39
 SUBCOMPONENT @47
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Panther Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_40~
 
 COPY    ~druidsor/portraits/animals/opan3m.bmp~      ~override/pantherm.bmp~
 COPY    ~druidsor/portraits/animals/opan3s.bmp~      ~override/panthers.bmp~
@@ -1203,26 +1240,29 @@ COPY    ~druidsor/portraits/animals/opan3s.bmp~      ~override/panthers.bmp~
 //////////////////////////// Rat Form Portraits
 
 
-BEGIN @90 /*oRat1 (Beige Rat) - By Amaurea*/              //40
+BEGIN @90 DESIGNATED 41 /*oRat1 (Beige Rat) - By Amaurea*/              //40
 SUBCOMPONENT @48
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Rat Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_41~
 
 COPY    ~druidsor/portraits/animals/orat1m.bmp~      ~override/ratm.bmp~
 COPY    ~druidsor/portraits/animals/orat1s.bmp~      ~override/rats.bmp~
 
-BEGIN @91 /*oRat2 (Rat sticking head out of hole) - By Amaurea*/  //41
+BEGIN @91 DESIGNATED 42 /*oRat2 (Rat sticking head out of hole) - By Amaurea*/  //41
 SUBCOMPONENT @48
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Rat Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_42~
 
 COPY    ~druidsor/portraits/animals/orat2m.bmp~      ~override/ratm.bmp~
 COPY    ~druidsor/portraits/animals/orat2s.bmp~      ~override/rats.bmp~
 
-BEGIN @92 /*oRat3 (Light rat with food) - By Amaurea*/            //42
+BEGIN @92 DESIGNATED 43 /*oRat3 (Light rat with food) - By Amaurea*/            //42
 SUBCOMPONENT @48
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Rat Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_43~
 
 COPY    ~druidsor/portraits/animals/orat3m.bmp~      ~override/ratm.bmp~
 COPY    ~druidsor/portraits/animals/orat3s.bmp~      ~override/rats.bmp~
@@ -1231,26 +1271,29 @@ COPY    ~druidsor/portraits/animals/orat3s.bmp~      ~override/rats.bmp~
 //////////////////////////// Snake Form Portraits
 
 
-BEGIN @93 /*oSnak1 (Snake raising head off grass) - By Amaurea*/      //43
+BEGIN @93 DESIGNATED 44 /*oSnak1 (Snake raising head off grass) - By Amaurea*/      //43
 SUBCOMPONENT @49
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Snake Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_44~
 
 COPY    ~druidsor/portraits/animals/osnak1m.bmp~      ~override/snakem.bmp~
 COPY    ~druidsor/portraits/animals/osnak1s.bmp~      ~override/snakes.bmp~
 
-BEGIN @94 /*oSnak2 (Cobra smelling its surroundings) - By Amaurea*/    //44
+BEGIN @94 DESIGNATED 45 /*oSnak2 (Cobra smelling its surroundings) - By Amaurea*/    //44
 SUBCOMPONENT @49
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Snake Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_45~
 
 COPY    ~druidsor/portraits/animals/osnak2m.bmp~      ~override/snakem.bmp~
 COPY    ~druidsor/portraits/animals/osnak2s.bmp~      ~override/snakes.bmp~
 
-BEGIN @95 /*oSnak3 (Cobra with hood partially extended) - By Amaurea*/   //45
+BEGIN @95 DESIGNATED 46 /*oSnak3 (Cobra with hood partially extended) - By Amaurea*/   //45
 SUBCOMPONENT @49
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Snake Form Portrait*/ // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_46~
 
 COPY    ~druidsor/portraits/animals/osnak3m.bmp~      ~override/snakem.bmp~
 COPY    ~druidsor/portraits/animals/osnak3s.bmp~      ~override/snakes.bmp~
@@ -1259,26 +1302,29 @@ COPY    ~druidsor/portraits/animals/osnak3s.bmp~      ~override/snakes.bmp~
 ////////////////////////////Wolf Form Portraits
 
 
-BEGIN @96 /*oWolf1 (White wolf) - By Amaurea*/          //46
+BEGIN @96 DESIGNATED 47 /*oWolf1 (White wolf) - By Amaurea*/          //46
 SUBCOMPONENT @50
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Wolf Form Portrait*/  // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_47~
 
 COPY    ~druidsor/portraits/animals/owolf1m.bmp~      ~override/wolfm.bmp~
 COPY    ~druidsor/portraits/animals/owolf1s.bmp~      ~override/wolfs.bmp~
 
-BEGIN @97 /*oWolf2 (Grey and white wolf) - By Amaurea*/   //47
+BEGIN @97 DESIGNATED 48 /*oWolf2 (Grey and white wolf) - By Amaurea*/   //47
 SUBCOMPONENT @50
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Wolf Form Portrait*/  // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_48~
 
 COPY    ~druidsor/portraits/animals/owolf2m.bmp~      ~override/wolfm.bmp~
 COPY    ~druidsor/portraits/animals/owolf2s.bmp~      ~override/wolfs.bmp~
 
-BEGIN @98 /*oWolf3 (Black Wolf) - By Amaurea*/           //48
+BEGIN @98 DESIGNATED 49 /*oWolf3 (Black Wolf) - By Amaurea*/           //48
 SUBCOMPONENT @50
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~2~ OR MOD_IS_INSTALLED ~setup-druidsor.tp2~ ~3~) @14 /*Wolf Form Portrait*/  // need male PC or female choice in earlier install order
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ @4 /* portraits too small for EE */
+LABEL ~ca#_geomantic_sorcerer_portraits_49~
 
 COPY    ~druidsor/portraits/animals/owolf3m.bmp~      ~override/wolfm.bmp~
 COPY    ~druidsor/portraits/animals/owolf3s.bmp~      ~override/wolfs.bmp~
