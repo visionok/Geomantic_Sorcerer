@@ -23,6 +23,10 @@ LANGUAGE ~Francais (Translation by zooloo of the D'Oghmatiques)~
          ~french~
          ~druidsor/languages/english/setup.tra~ // English
          ~druidsor/languages/french/setup.tra~ // French
+LANGUAGE ~Spanish (Translation by lisandro)~
+         ~spanish~
+         ~druidsor/languages/english/setup.tra~ // English
+         ~druidsor/languages/spanish/setup.tra~ // spanish
 
 
 
