@@ -2,11 +2,30 @@
 @2=~Throne of Bhaal/EE Required~
 @3=~Install DLCMerger before installing to a Siege of Dragonspear game.~
 @4=~The portrait options are not available for EE games.~
+
+// @5 - @9 added in v7
+@5 = ~\bpriest\b~
+@6 = ~\bPriest\b~ 
+@7 = ~\bPRIEST\b~ 
+@8 = ~\bPriests\b~ 
+@9 = ~^\([ %TAB%]*Level[ %TAB%]*:?[ %TAB%]*\)[0-9A-Za-z]+~ // should be 1-7 or 'Quest'
+
+
 @10=~Invalid Class/Statistics/Alignment Combination~
 @11=~Can't install if mod component Female Portraits for Shapeshifting is installed~
 @12=~Need Geomantic Sorcerer kit installed before you can install this component~
 @13=~Can't install if mod component Male Portraits for Shapeshifting is installed~
 @14=~Can't install unless mod component Male or Female Portraits for Shapeshifting is installed~
+
+
+// @15 - @19 added in v7
+@15 = ~geomantic sorcerer~
+@16 = ~Geomantic sorcerer~
+@17 = ~GEOMANTIC SORCERER~
+@18 = ~Geomantic sorcerers~
+@19 = ~[ %MNL%%LNL%%TAB%]+Spheres?:.+$~ 
+
+
 @20=~Portraits for Druidic Shapeshifting
 DO NOT INSTALL THIS IF YOU ARE GOING TO GIVE THE KIT TO A NPC~
 @21=~fCast02 (Green Hooded, possibly elven/half-elven)~

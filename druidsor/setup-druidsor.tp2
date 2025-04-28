@@ -551,68 +551,83 @@ COPY	~druidsor/SPLs/CA#FCK.spl~	~override/CA#FCK.spl~
 
 // Clone and modify existing priest spells for this kit as arcane spells
 
-// level 1 wizard spells
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr103 destination = ~ca#ds103~ RET_ARRAY cd_clone_spell_array END //cure light wounds
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr104 destination = ~ca#ds104~ RET_ARRAY cd_clone_spell_array END //detect evil
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr105 destination = ~ca#ds105~ RET_ARRAY cd_clone_spell_array END //entangle
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr109 destination = ~ca#ds109~ RET_ARRAY cd_clone_spell_array END //sanctuary
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr110 destination = ~ca#ds110~ RET_ARRAY cd_clone_spell_array END //shillelagh
 
-LAF divine_to_arcane INT_VAR spell_level = 1 STR_VAR source = sppr103 destination = ~CA#DS103~ END //cure light wounds
-LAF divine_to_arcane INT_VAR spell_level = 1 STR_VAR source = sppr104 destination = ~CA#DS104~ END //detect evil
-LAF divine_to_arcane INT_VAR spell_level = 1 STR_VAR source = sppr105 destination = ~CA#DS105~ END //entangle
-LAF divine_to_arcane INT_VAR spell_level = 1 STR_VAR source = sppr109 destination = ~CA#DS109~ END //sanctuary
-LAF divine_to_arcane INT_VAR spell_level = 1 STR_VAR source = sppr110 destination = ~CA#DS110~ END //shillelagh
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr202 destination = ~ca#ds202~ RET_ARRAY cd_clone_spell_array END //barkskin
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr204 destination = ~ca#ds204~ RET_ARRAY cd_clone_spell_array END //charm person or mammal
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr206 destination = ~ca#ds206~ RET_ARRAY cd_clone_spell_array END //flame blade
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr207 destination = ~ca#ds207~ RET_ARRAY cd_clone_spell_array END //goodberries
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr210 destination = ~ca#ds210~ RET_ARRAY cd_clone_spell_array END //resist fire/cold
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr211 destination = ~ca#ds211~ RET_ARRAY cd_clone_spell_array END //silence 15' radius
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr212 destination = ~ca#ds212~ RET_ARRAY cd_clone_spell_array END //slow poison
 
-LAF divine_to_arcane INT_VAR spell_level = 2 STR_VAR source = sppr202 destination = ~CA#DS202~ END //barkskin
-LAF divine_to_arcane INT_VAR spell_level = 2 STR_VAR source = sppr204 destination = ~CA#DS204~ END //charm person or mammal
-LAF divine_to_arcane INT_VAR spell_level = 2 STR_VAR source = sppr206 destination = ~CA#DS206~ END //flame blade
-LAF divine_to_arcane INT_VAR spell_level = 2 STR_VAR source = sppr207 destination = ~CA#DS207~ END //goodberries
-LAF divine_to_arcane INT_VAR spell_level = 2 STR_VAR source = sppr210 destination = ~CA#DS210~ END //resist fire/cold
-LAF divine_to_arcane INT_VAR spell_level = 2 STR_VAR source = sppr211 destination = ~CA#DS211~ END //silence 15' radius
-LAF divine_to_arcane INT_VAR spell_level = 2 STR_VAR source = sppr212 destination = ~CA#DS212~ END //slow poison
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr302 destination = ~ca#ds302~ RET_ARRAY cd_clone_spell_array END //call lightning
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr305 destination = ~ca#ds305~ RET_ARRAY cd_clone_spell_array END //hold animal
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr306 destination = ~ca#ds306~ RET_ARRAY cd_clone_spell_array END //protection from fire
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr308 destination = ~ca#ds308~ RET_ARRAY cd_clone_spell_array END //Remove paralysis
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr315 destination = ~ca#ds315~ RET_ARRAY cd_clone_spell_array END //cure medium wounds
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr317 destination = ~ca#ds317~ RET_ARRAY cd_clone_spell_array END //cure disease
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr318 destination = ~ca#ds318~ RET_ARRAY cd_clone_spell_array END //zone of sweet air
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr319 destination = ~ca#ds319~ RET_ARRAY cd_clone_spell_array END //summon insects
 
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr302 destination = ~CA#DS302~ END //call lightning
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr305 destination = ~CA#DS305~ END //hold animal
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr306 destination = ~CA#DS306~ END //protection from fire
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr308 destination = ~CA#DS308~ END //Remove paralysis
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr315 destination = ~CA#DS315~ END //cure medium wounds
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr317 destination = ~CA#DS317~ END //cure disease
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr318 destination = ~CA#DS318~ END //zone of sweet air
-LAF divine_to_arcane INT_VAR spell_level = 3 STR_VAR source = sppr319 destination = ~CA#DS319~ END //summon insects
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr402 destination = ~ca#ds402~ RET_ARRAY cd_clone_spell_array END //animal summoning I
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr403 destination = ~ca#ds403~ RET_ARRAY cd_clone_spell_array END //free action
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr404 destination = ~ca#ds404~ RET_ARRAY cd_clone_spell_array END //neutralize poison
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr406 destination = ~ca#ds406~ RET_ARRAY cd_clone_spell_array END //defensive harmony
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr407 destination = ~ca#ds407~ RET_ARRAY cd_clone_spell_array END //protection from lightning
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr410 destination = ~ca#ds410~ RET_ARRAY cd_clone_spell_array END //call woodland beings (special)
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 STR_VAR source = sppr411 destination = ~ca#ds411~ RET_ARRAY cd_clone_spell_array END //poison
 
-LAF divine_to_arcane INT_VAR spell_level = 4 STR_VAR source = sppr402 destination = ~CA#DS402~ END //animal summoning I
-LAF divine_to_arcane INT_VAR spell_level = 4 STR_VAR source = sppr403 destination = ~CA#DS403~ END //free action
-LAF divine_to_arcane INT_VAR spell_level = 4 STR_VAR source = sppr404 destination = ~CA#DS404~ END //neutralize poison
-LAF divine_to_arcane INT_VAR spell_level = 4 STR_VAR source = sppr406 destination = ~CA#DS406~ END //defensive harmony
-LAF divine_to_arcane INT_VAR spell_level = 4 STR_VAR source = sppr407 destination = ~CA#DS407~ END //protection from lightning
-LAF divine_to_arcane INT_VAR spell_level = 4 keep_priest = 1 STR_VAR source = sppr410 destination = ~CA#DS410~ END //call woodland beings (special)
-LAF divine_to_arcane INT_VAR spell_level = 4 STR_VAR source = sppr411 destination = ~CA#DS411~ END //poison
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 5 level_old = 4 STR_VAR source = sppr401 destination = ~ca#ds401~ RET_ARRAY cd_clone_spell_array END //cure serious wounds
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr501 destination = ~ca#ds501~ RET_ARRAY cd_clone_spell_array END //animal summoning II
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr506 destination = ~ca#ds506~ RET_ARRAY cd_clone_spell_array END //iron skins
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr508 destination = ~ca#ds508~ RET_ARRAY cd_clone_spell_array END //chaotic commands
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr516 destination = ~ca#ds516~ RET_ARRAY cd_clone_spell_array END //pixie dust
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr517 destination = ~ca#ds517~ RET_ARRAY cd_clone_spell_array END //insect plague
 
-LAF divine_to_arcane INT_VAR spell_level = 5 STR_VAR source = sppr401 destination = ~CA#DS401~ END //cure serious wounds
-LAF divine_to_arcane INT_VAR spell_level = 5 STR_VAR source = sppr501 destination = ~CA#DS501~ END //animal summoning II
-LAF divine_to_arcane INT_VAR spell_level = 5 STR_VAR source = sppr506 destination = ~CA#DS506~ END //iron skins
-LAF divine_to_arcane INT_VAR spell_level = 5 STR_VAR source = sppr508 destination = ~CA#DS508~ END //chaotic commands
-LAF divine_to_arcane INT_VAR spell_level = 5 STR_VAR source = sppr516 destination = ~CA#DS516~ END //pixie dust
-LAF divine_to_arcane INT_VAR spell_level = 5 STR_VAR source = sppr517 destination = ~CA#DS517~ END //insect plague
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 6 level_old = 5 STR_VAR source = sppr502 destination = ~ca#ds502~ RET_ARRAY cd_clone_spell_array END //cure critical wounds
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 6 level_old = 5 STR_VAR source = sppr512 destination = ~ca#ds512~ RET_ARRAY cd_clone_spell_array END //greater command
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr602 destination = ~ca#ds602~ RET_ARRAY cd_clone_spell_array END //animal summoning III
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr604 destination = ~ca#ds604~ RET_ARRAY cd_clone_spell_array END //conjure animals
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr605 destination = ~ca#ds605~ RET_ARRAY cd_clone_spell_array END //conjure fire elemental
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr606 destination = ~ca#ds606~ RET_ARRAY cd_clone_spell_array END //fire seeds
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr610 destination = ~ca#ds610~ RET_ARRAY cd_clone_spell_array END //dolorous decay
 
-LAF divine_to_arcane INT_VAR spell_level = 6 STR_VAR source = sppr502 destination = ~CA#DS502~ END //cure critical wounds
-LAF divine_to_arcane INT_VAR spell_level = 6 STR_VAR source = sppr512 destination = ~CA#DS512~ END //greater command
-LAF divine_to_arcane INT_VAR spell_level = 6 STR_VAR source = sppr602 destination = ~CA#DS602~ END //animal summoning III
-LAF divine_to_arcane INT_VAR spell_level = 6 STR_VAR source = sppr604 destination = ~CA#DS604~ END //conjure animals
-LAF divine_to_arcane INT_VAR spell_level = 6 STR_VAR source = sppr605 destination = ~CA#DS605~ END //conjure fire elemental
-LAF divine_to_arcane INT_VAR spell_level = 6 STR_VAR source = sppr606 destination = ~CA#DS606~ END //fire seeds
-LAF divine_to_arcane INT_VAR spell_level = 6 STR_VAR source = sppr610 destination = ~CA#DS610~ END //dolorous decay
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 7 level_old = 6 STR_VAR source = sppr607 destination = ~ca#ds607~ RET_ARRAY cd_clone_spell_array END //heal
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 7 level_old = 6 STR_VAR source = sppr613 destination = ~ca#ds613~ RET_ARRAY cd_clone_spell_array END //physical mirror
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr702 destination = ~ca#ds702~ RET_ARRAY cd_clone_spell_array END //conjure earth elemental
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr707 destination = ~ca#ds707~ RET_ARRAY cd_clone_spell_array END //sunray
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr717 destination = ~ca#ds717~ RET_ARRAY cd_clone_spell_array END //creeping doom
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1                             STR_VAR source = sppr720 destination = ~ca#ds720~ RET_ARRAY cd_clone_spell_array END //earthquake
 
-LAF divine_to_arcane INT_VAR spell_level = 7 STR_VAR source = sppr607 destination = ~CA#DS607~ END //heal
-LAF divine_to_arcane INT_VAR spell_level = 7 STR_VAR source = sppr613 destination = ~CA#DS613~ END //physical mirror
-LAF divine_to_arcane INT_VAR spell_level = 7 STR_VAR source = sppr702 destination = ~CA#DS702~ END //conjure earth elemental
-LAF divine_to_arcane INT_VAR spell_level = 7 STR_VAR source = sppr707 destination = ~CA#DS707~ END //sunray
-LAF divine_to_arcane INT_VAR spell_level = 7 STR_VAR source = sppr717 destination = ~CA#DS717~ END //creeping doom
-LAF divine_to_arcane INT_VAR spell_level = 7 STR_VAR source = sppr720 destination = ~CA#DS720~ END //earthquake
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 8 level_old = 7 STR_VAR source = sppr701 destination = ~ca#ds701~ RET_ARRAY cd_clone_spell_array END //shield of the archons
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 8 level_old = 7 STR_VAR source = sppr704 destination = ~ca#ds704~ RET_ARRAY cd_clone_spell_array END //nature's beauty
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 8 level_old = 7 STR_VAR source = sppr705 destination = ~ca#ds705~ RET_ARRAY cd_clone_spell_array END //fire storm
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 8 level_old = 7 STR_VAR source = sppr711 destination = ~ca#ds711~ RET_ARRAY cd_clone_spell_array END //regeneration
 
-LAF divine_to_arcane INT_VAR spell_level = 8 STR_VAR source = sppr701 destination = ~CA#DS701~ END //shield of the archons
-LAF divine_to_arcane INT_VAR spell_level = 8 STR_VAR source = sppr704 destination = ~CA#DS704~ END //nature's beauty
-LAF divine_to_arcane INT_VAR spell_level = 8 STR_VAR source = sppr705 destination = ~CA#DS705~ END //fire storm
-LAF divine_to_arcane INT_VAR spell_level = 8 STR_VAR source = sppr711 destination = ~CA#DS711~ END //regeneration
+LAF cd_clone_spell_bulk INT_VAR make_arcane = 1 level_new = 9 level_old = 5 STR_VAR source = sppr504 destination = ~ca#ds504~ RET_ARRAY cd_clone_spell_array END //raise dead
 
-LAF divine_to_arcane INT_VAR spell_level = 9 STR_VAR source = sppr504 destination = ~CA#DS504~ END //raise dead
+INCLUDE ~divine_remix/lib/cd_clone_spell_bulk_last.tpa~
 
+COPY_EXISTING_REGEXP GLOB ~^ca#ds[1-7][0-9][0-9]\.spl$~ ~override~
+  READ_LONG 0x34 level 
+  PATCH_FOR_EACH offset IN 0x50 0x54 BEGIN
+    READ_STRREF ~%offset%~ desc
+    PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+      INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+        PATCH_IF ("%SOURCE_RES%" STRING_COMPARE_CASE "CA#DS410") BEGIN LAUNCH_PATCH_MACRO ~priest_druid~ END // don't update call woodland beings
+        LAUNCH_PATCH_MACRO ~sphere_removal~
+        LAUNCH_PATCH_MACRO ~level_number~
+      END
+      SAY_EVALUATED ~%offset%~ ~%desc%~ // write changes
+    END   
+  END
+  BUT_ONLY 
+  
 ACTION_IF GAME_IS ~tob bgt tutu tutu_totsc~ THEN BEGIN // non-EE game
   
   // Internal Name of the Kit
