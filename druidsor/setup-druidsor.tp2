@@ -26,7 +26,7 @@ ALWAYS
 
 END
 
-VERSION ~v7~
+VERSION ~v8~
 README ~druidsor/readme-druidsor.html~ // Offer to display the main readme
 
 ASK_EVERY_COMPONENT
