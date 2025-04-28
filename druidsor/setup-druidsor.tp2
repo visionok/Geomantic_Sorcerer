@@ -21,6 +21,8 @@ ALWAYS
       LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~druidsor/languages~ out_path = ~weidu_external/druidsor/languages~ reload_array = cdreload END
 
     END
+    
+  END  
 
 END
 
