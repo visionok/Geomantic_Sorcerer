@@ -1,18 +1,28 @@
-BACKUP   ~druidsor/backup~    // location to store files for uninstall purposes
+BACKUP   ~weidu_external/druidsor/backup~    // location to store files for uninstall purposes
 SUPPORT  ~http://gibberlings3.net/forums/index.php?showforum=28~ // email address displayed if install fails
 
 ALWAYS
 
   ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @3 END // Modmerge check
+  
+  ACTION_IF GAME_IS ~bgee iwdee bg2ee eet~ BEGIN
+  
+    OUTER_SPRINT tra_path ~weidu_external/druidsor/languages~
 
-  // convert strings to UTF-8 for BGEE/BG2EE
-  ACTION_DEFINE_ARRAY cdreload BEGIN setup END
-  LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~druidsor/languages~ reload_array = cdreload END
+    // convert strings to UTF-8 for BGEE/BG2EE
+    ACTION_DEFINE_ARRAY cdreload BEGIN setup END
+    LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~druidsor/languages~ out_path = ~weidu_external/druidsor/languages~ reload_array = cdreload END
+  
+  END ELSE BEGIN
+  
+    OUTER_SPRINT tra_path ~druidsor/languages~
+    
+  END   
 
 END
 
 VERSION ~v6~
-README ~druidsor/readme-druidSor.html~ // Offer to display the main readme
+README ~druidsor/readme-druidsor.html~ // Offer to display the main readme
 
 ASK_EVERY_COMPONENT
 
@@ -676,8 +686,8 @@ ACTION_IF GAME_IS ~tob bgt tutu tutu_totsc~ THEN BEGIN // non-EE game
   // Dialogue changes
   
   COMPILE ~druidsor/Ds/AATAQAH.d~
-  USING   ~druidsor/languages/English/AATAQAH.tra~
-          ~druidsor/languages/%s/AATAQAH.tra~
+  USING   ~%tra_path%/English/AATAQAH.tra~
+          ~%tra_path%/%s/AATAQAH.tra~
         
 END ELSE BEGIN 
 
