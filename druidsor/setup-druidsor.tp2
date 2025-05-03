@@ -42,6 +42,10 @@ LANGUAGE ~Spanish (Translation by lisandro)~
          ~spanish~
          ~druidsor/languages/english/setup.tra~ // English
          ~druidsor/languages/spanish/setup.tra~ // spanish
+		 
+LANGUAGE ~Simplified Chinese (Translation by redrumcha)~
+         ~schinese~
+         ~druidsor/languages/schinese/setup.tra~ // schinese
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
