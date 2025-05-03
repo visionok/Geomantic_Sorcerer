@@ -18,6 +18,7 @@ ALWAYS
 
       // convert strings to UTF-8 for BGEE/BG2EE
       ACTION_DEFINE_ARRAY cdreload BEGIN setup END
+	  ACTION_DEFINE_ARRAY cdnoconvert BEGIN install END
       LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~druidsor/languages~ out_path = ~weidu_external/druidsor/languages~ reload_array = cdreload END
 
     END
@@ -42,6 +43,10 @@ LANGUAGE ~Spanish (Translation by lisandro)~
          ~spanish~
          ~druidsor/languages/english/setup.tra~ // English
          ~druidsor/languages/spanish/setup.tra~ // spanish
+		 
+LANGUAGE ~Simplified Chinese (Translation by redrumcha)~
+         ~schinese~
+         ~druidsor/languages/schinese/install.tra~ // schinese
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
