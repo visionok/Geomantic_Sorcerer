@@ -1,0 +1,84 @@
+// installer strings - keep in UTF8
+
+@1=~Kit de Hechicero Geomántico~
+@2=~Requiere Throne of Bhaal~
+@10=~Combinación de clase/estadísticas/alineamiento incorrectos~
+@11=~No se puede instalar si el componente Retratos Femeninos para Cambiaformas del mod está instalado~
+@12=~Requiere que el kit de Hechicero Geomántico esté instalado antes de poder instalar este componente~
+@13=~No se puede instalar si el componente Retratos Masculinos para Cambiaformas del mod está instalado~
+@20=~Retratos para el Cambio de Forma Druídico
+NO INSTALAR SI VAIS A DARLE EL KIT A UN NPC~
+@21=~fCast02 (Encapuchada verde, posiblemente elfa/semielfa)~
+@22=~fCast15 (Lanzadora tatuada)~
+@23=~fCast16 (Con ornamentos metálicos)~
+@24=~fCast18 (Humana/semielfa de pelo castaño)~
+@25=~fDruid7 (Druida con tocado)~
+@26=~fDruid9 (Druida pelirroja con túnica marrón)~
+@27=~fGeo01 (DESCRIPCIÓN) - Por Amedyr~
+@28=~fHaEl1 (Lanzadora elfa/semielfa) - Por Amaurea~
+@29=~fHaEl2 (Semielfa/elfa con túnica blanca) - Por Amaurea~
+@30=~PCs masculinos~
+@31=~PCs femeninos~
+@40=~Retrato de forma humaniode masculino
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@42=~Retrato de forma de oso
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@43=~Retrato de forma de gato
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@44=~Retrato de forma de perro
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@45=~Retrato de forma de leopardo
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@46=~Retrato de forma de alce macho
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@47=~Retrato de forma de pantera
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@48=~Retrato de forma de rata
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@49=~Retrato de forma de serpiente
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@50=~Retrato de forma de lobo
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@51=~Retrato de forma humanoide femenino
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@52=~Retrato de forma de alce hembra
+(Ir a la sección de Retratos del Léeme para ver los retratos)~
+@60=~mCast2 (Lanzador con relámpagos)~
+@61=~mCast5 (Lanzador rubio encapuchado)~
+@62=~mDruid2 (Druida con pintura facial) - Por Amaurea~
+@63=~mDruid (Druida en la vegetación)~
+@64=~mElf1 (Elfo de piel ligeramente oscura)~
+@65=~mElf2 (Elfo lanzador, cuello abierto) - Por Amaurea~
+@66=~mElf3 (Elfo lanzador, primer plano) - Por Amaurea~
+@67=~mGeo01 (Lnazador con runas y señales) - Por Amedyr~
+@68=~mHum7 (Humano de cabeza roja) - Por Amaurea~
+@99=~oBear1 (Oso negro oscuro mirando por encima del hombro) - Por Amaurea~
+@70=~oBear2 (Oso pardo con la boca sonriente ligeramente abierta) - Por Amaurea~
+@71=~oBear3 (Oso de mirada seria) - Por Amaurea~
+@72=~oCat1 (Gato con motas amarillas y naranjas con barba blanca) - Por Amaurea~
+@73=~oCat2 (Gato gris con bandas negras alrededor del cuello) - Por Amaurea~
+@74=~oCat3 (Gato gris) - Por Amaurea~
+@75=~oDog1 (Mastín gris) - Por Amaurea~
+@76=~oDog2 (Perro peludo color beige) - Por Amaurea~
+@77=~oDog3 (Collie de la frontera) - Por Amaurea, foto de Skye por Caedwyr~
+@78=~oLeop1 (Leopardo) - Por Amaurea~
+@79=~oLeop2 (Leopardo con nieve) - Por Amaurea~
+@80=~oLeop3 (Leopardo con lengua) - Por Amaurea~
+@81=~omMoo1 (Alce con la cabeza baja) - Por Amaurea~
+@82=~omMoo2 (Alce con la cabeza de perfil) - Por Amaurea~
+@83=~omMoo3 (Alce de color castaño) - Por Amaurea~
+@84=~ofMoo1 (Alce en medio perfil) - Por Amaurea~
+@85=~ofMoo2 (Alce de color castaño con la cabeza baja) - Por Amaurea~
+@86=~ofMoo3 (Alce de color castaño con la cabeza alta) - Por Amaurea~
+@87=~oPan1 (Pantera negra brillante) - Por Amaurea~
+@88=~oPan2 (Pantera con la cabeza ladeada a un lado) - Por Amaurea~
+@89=~oPan3 (Pantera con la boca parcialmente abierta) - Por Amaurea~
+@90=~oRat1 (Rata beige) - Por Amaurea~
+@91=~oRat2 (Rata sacando la cabeza del agujero) - Por Amaurea~
+@92=~oRat3 (Rata clara con comida) - Por Amaurea~
+@93=~oSnak1 (Serpiente alzando la cabeza de la hierba) - Por Amaurea~
+@94=~oSnak2 (Cobra oliendo los alrededores) - Por Amaurea~
+@95=~oSnak3 (Cobra con capucha parcialmente extendida) - Por Amaurea~
+@96=~oWolf1 (Lobo blanco) - Por Amaurea~
+@97=~oWolf2 (Lobo gris y blanco) - Por Amaurea~
+@98=~oWolf3 (Lobo negro) - Por Amaurea~

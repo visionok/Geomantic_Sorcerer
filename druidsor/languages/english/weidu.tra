@@ -1,0 +1,89 @@
+// installer strings - keep in UTF8
+
+@1=~Geomantic Sorcerer Kit~
+@2=~Throne of Bhaal/EE Required~
+@3=~Install DLCMerger before installing to a Siege of Dragonspear game.~
+@4=~The portrait options are not available for EE games.~
+
+@10=~Invalid Class/Statistics/Alignment Combination~
+@11=~Can't install if mod component Female Portraits for Shapeshifting is installed~
+@12=~Need Geomantic Sorcerer kit installed before you can install this component~
+@13=~Can't install if mod component Male Portraits for Shapeshifting is installed~
+@14=~Can't install unless mod component Male or Female Portraits for Shapeshifting is installed~
+
+@20=~Portraits for Druidic Shapeshifting
+DO NOT INSTALL THIS IF YOU ARE GOING TO GIVE THE KIT TO A NPC~
+@21=~fCast02 (Green Hooded, possibly elven/half-elven)~
+@22=~fCast15 (Tatooed caster)~
+@23=~fCast16 (With metal ornamentation)~
+@24=~fCast18 (Brown Hair human/half-elf)~
+@25=~fDruid7 (Druid with headdress)~
+@26=~fDruid9 (Red headed druid type in brown robe)~
+@27=~fGeo01 (DESCRIPTION) - By Amedyr~
+@28=~fHaEl1 (Elf/Half-Elf caster type) - By Amaurea~
+@29=~fHaEl2 (White robed half-elf/elf) - By Amaurea~
+@30=~Male PCs~
+@31=~Female PCs~
+@40=~Male Humanoid Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@42=~Bear Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@43=~Cat Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@44=~Dog Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@45=~Leopard Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@46=~Male Moose Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@47=~Panther Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@48=~Rat Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@49=~Snake Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@50=~Wolf Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@51=~Female Humanoid Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@52=~Female Moose Form Portrait
+(Refer to the Readme's Portrait section to view the portraits)~
+@60=~mCast2 (Lightning Caster)~
+@61=~mCast5 (Blond Hooded Caster)~
+@62=~mDruid2 (Druid with face paint) - By Amaurea~
+@63=~mDruid (Druid in Vegetation)~
+@64=~mElf1 (Slightly dark skinned elf)~
+@65=~mElf2 (Elf caster type, open collar) - By Amaurea~
+@66=~mElf3 (Elf caster type, closeup) - By Amaurea~
+@67=~mGeo01 (Caster with sigils and runes) - By Amedyr~
+@68=~mHum7 (Red headed human) - By Amaurea~
+@99=~oBear1 (Dark Brown looking over shoulder) - By Amaurea~
+@70=~oBear2 (Lighter Brown with partially open smiling mouth) - By Amaurea~
+@71=~oBear3 (Serious looking bear) - By Amaurea~
+@72=~oCat1 (Yellow and orange mottled with white bib) - By Amaurea~
+@73=~oCat2 (Grey with black bands around neck) - By Amaurea~
+@74=~oCat3 (Grey) - By Amaurea~
+@75=~oDog1 (Grey Hound) - By Amaurea~
+@76=~oDog2 (Beige shaggy haired dog) - By Amaurea~
+@77=~oDog3 (Border Collie) - By Amaurea, picture of Skye by Caedwyr~
+@78=~oLeop1 (Leopard) - By Amaurea~
+@79=~oLeop2 (Leopard with snow) - By Amaurea~
+@80=~oLeop3 (Leopard with tongue) - By Amaurea~
+@81=~omMoo1 (Moose with head down) - By Amaurea~
+@82=~omMoo2 (Moose with head in profile) - By Amaurea~
+@83=~omMoo3 (Chestnut coloured moose) - By Amaurea~
+@84=~ofMoo1 (Semi-profile perspective) - By Amaurea~
+@85=~ofMoo2 (Chestnut coloured moose with head down) - By Amaurea~
+@86=~ofMoo3 (Chestnut coloured moose with head up) - By Amaurea~
+@87=~oPan1 (Shiny black panther) - By Amaurea~
+@88=~oPan2 (Panther with head cocked to one side) - By Amaurea~
+@89=~oPan3 (Panther with mouth partially open) - By Amaurea~
+@90=~oRat1 (Beige Rat) - By Amaurea~
+@91=~oRat2 (Rat sticking head out of hole) - By Amaurea~
+@92=~oRat3 (Light rat with food) - By Amaurea~
+@93=~oSnak1 (Snake raising head off grass) - By Amaurea~
+@94=~oSnak2 (Cobra smelling its surroundings) - By Amaurea~
+@95=~oSnak3 (Cobra with hood partially extended) - By Amaurea~
+@96=~oWolf1 (White wolf) - By Amaurea~
+@97=~oWolf2 (Grey and white wolf) - By Amaurea~
+@98=~oWolf3 (Black Wolf) - By Amaurea~

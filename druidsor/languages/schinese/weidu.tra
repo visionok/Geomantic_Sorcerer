@@ -1,0 +1,89 @@
+// installer strings - keep in UTF8
+
+@1=~风水术士职业~
+@2=~需要TOB~
+@3=~在安装到龙矛围攻游戏之前需要安装DLCMerger。~
+@4=~EE 游戏不提供肖像选项。~
+
+@10=~错误的职业/属性/阵营~
+@11=~如果安装了女性变形后的肖像组件则不能安装~
+@12=~安装这个组建前需要安装需要安装风水术士职业~
+@13=~如果安装了男性变形后的肖像组件则不能安装~
+@14=~除非安装了用于变形的男性或女性肖像修改组件，否则无法安装~
+
+@20=~德鲁伊变形肖像
+如果要将此宗派用于Npc，请勿安装此功能~
+@21=~fCast02 (戴绿色兜帽的精灵/半精灵)~
+@22=~fCast15 (纹身施法者)~
+@23=~fCast16 (戴金属饰品)~
+@24=~fCast18 (棕发的人类/半精灵)~
+@25=~fDruid7 (戴头饰的德鲁伊)~
+@26=~fDruid9 (有着红色脑袋穿着棕色长袍的德鲁伊)~
+@27=~fGeo01 (描述) - By Amedyr~
+@28=~fHaEl1 (精灵/半精灵施法者类型) - By Amaurea~
+@29=~fHaEl2 (穿着白色长袍的半精灵/精灵) - By Amaurea~
+@30=~男性玩家~
+@31=~女性玩家~
+@40=~类人男性形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@42=~熊形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@43=~猫形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@44=~狗形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@45=~豹形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@46=~雄性麋鹿形态的肖像
+(参考Readme的肖像部分来查看肖像）~
+@47=~黑豹形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@48=~鼠形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@49=~蛇形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@50=~狼形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@51=~类人女性形态的肖像
+(参考Readme的肖像部分来查看肖像)~
+@52=~雌性麋鹿的肖像
+(参考Readme的肖像部分来查看肖像)~
+@60=~mCast2 (闪电环绕的施法者)~
+@61=~mCast5 (亚麻色兜帽的施法者)~
+@62=~mDruid2 (脸上有彩绘的德鲁伊) - By Amaurea~
+@63=~mDruid (植物中的德鲁伊)~
+@64=~mElf1 (皮肤有些黯淡的精灵)~
+@65=~mElf2 (开领的精灵施法者类型) - By Amaurea~
+@66=~mElf3 (闭领的精灵施法者类型) - By Amaurea~
+@67=~mGeo01 (拥有印记和符文的施法者) - By Amedyr~
+@68=~mHum7 (红色脑袋的人类) - By Amaurea~
+@99=~oBear1 (暗褐色的熊，越过肩膀张望) - By Amaurea~
+@70=~oBear2 (浅棕色的熊，微笑的嘴半张着) - By Amaurea~
+@71=~oBear3 (严肃凝视的熊) - By Amaurea~
+@72=~oCat1 (有黄色和橙色斑点的猫，有着白色的“围兜”) - By Amaurea~
+@73=~oCat2 (灰色的猫，颈部有黑边) - By Amaurea~
+@74=~oCat3 (灰色猫) - By Amaurea~
+@75=~oDog1 (灰色的猎犬) - By Amaurea~
+@76=~oDog2 (有着米黄色杂乱头发的狗) - By Amaurea~
+@77=~oDog3 (边境牧羊犬) - By Amaurea, picture of Skye by Caedwyr~
+@78=~oLeop1 (豹) - By Amaurea~
+@79=~oLeop2 (雪地上的豹) - By Amaurea~
+@80=~oLeop3 (伸出舌头的豹) - By Amaurea~
+@81=~omMoo1 (低头的麋鹿) - By Amaurea~
+@82=~omMoo2 (侧着头的麋鹿) - By Amaurea~
+@83=~omMoo3 (栗子色的麋鹿) - By Amaurea~
+@84=~ofMoo1 (半侧面视角) - By Amaurea~
+@85=~ofMoo2 (低头的栗子色麋鹿) - By Amaurea~
+@86=~ofMoo3 (抬头的栗子色麋鹿) - By Amaurea~
+@87=~oPan1 (闪闪发亮的黑豹) - By Amaurea~
+@88=~oPan2 (头偏向一侧的黑豹) - By Amaurea~
+@89=~oPan3 (嘴半张着的黑豹) - By Amaurea~
+@90=~oRat1 (米黄色老鼠) - By Amaurea~
+@91=~oRat2 (头探出洞的老鼠) - By Amaurea~
+@92=~oRat3 (抱着食物的小老鼠) - By Amaurea~
+@93=~oSnak1 (在草丛中抬头的蛇) - By Amaurea~
+@94=~oSnak2 (眼镜蛇探查周围的环境) - By Amaurea~
+@95=~oSnak3 (兜帽般展开的眼镜蛇) - By Amaurea~
+@96=~oWolf1 (白狼) - By Amaurea~
+@97=~oWolf2 (灰白夹杂的狼) - By Amaurea~
+@98=~oWolf3 (黑狼) - By Amaurea~

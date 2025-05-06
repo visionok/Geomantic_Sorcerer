@@ -1,14 +1,13 @@
-OUTER_SPRINT prst_low_old @5
-OUTER_SPRINT prst_mix_old @6
-OUTER_SPRINT prst_upp_old @7
-OUTER_SPRINT prst_plu_old @8
-OUTER_SPRINT level_match  @9
-OUTER_SPRINT prst_low_new @15
-OUTER_SPRINT prst_mix_new @16
-OUTER_SPRINT prst_upp_new @17
-OUTER_SPRINT prst_plu_new @18
-OUTER_SPRINT sphere_match @19
-
+OUTER_SPRINT prst_low_old @334
+OUTER_SPRINT prst_mix_old @335
+OUTER_SPRINT prst_upp_old @336
+OUTER_SPRINT prst_plu_old @337
+OUTER_SPRINT level_match  @338
+OUTER_SPRINT prst_low_new @339
+OUTER_SPRINT prst_mix_new @340
+OUTER_SPRINT prst_upp_new @341
+OUTER_SPRINT prst_plu_new @342
+OUTER_SPRINT sphere_match @343
 
 DEFINE_PATCH_MACRO ~priest_druid~ BEGIN
 

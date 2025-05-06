@@ -1,0 +1,84 @@
+// installer strings - keep in UTF8
+
+@1=~Geomantic Sorcerer Kit~
+@2=~Throne of Bhaal requis~
+@10=~Combinaison invalide de Classe/Statistiques/Alignement~
+@11=~Incompatible avec le composant 'Female Portraits for Shapeshifting'~
+@12=~Geomantic Sorcerer kit doit etre installe avant ce composant~
+@13=~Incompatible avec le composant 'Male Portraits for Shapeshifting'~
+@20=~Portraits pour la metamorphose druidique
+NE PAS INSTALLER SI VOUS COMPTEZ DONNER CE KIT A UN PNJ~
+@21=~fCast02 (Elfe/Demi-elfe, avec une capuche verte)~
+@22=~fCast15 (Lanceur de sorts tatoue)~
+@23=~fCast16 (Avec un ornement métallique)~
+@24=~fCast18 (Humain/Demi-elfe aux cheveux bruns)~
+@25=~fDruid7 (Druide avec une coiffe)~
+@26=~fDruid9 (Druide roux typique portant une robe marron)~
+@27=~fGeo01 (DESCRIPTION) - par Amedyr~
+@28=~fHaEl1 (Lanceur de sorts Elfe/Demi-elfe) - par Amaurea~
+@29=~fHaEl2 (Demi-elfe/Elfe en robe blanche) - par Amaurea~
+@30=~PJs Masculins~
+@31=~PJs Feminins~
+@40=~Portrait pour la forme humanoide male
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@42=~Portrait pour la forme ours
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@43=~Portrait pour la forme chat
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@44=~Portrait pour la forme chien
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@45=~Portrait pour la forme leopard
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@46=~Portrait pour la forme elan male
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@47=~Portrait pour la forme panthere
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@48=~Portrait pour la forme rat
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@49=~Portrait pour la forme serpent
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@50=~Portrait pour la forme loup
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@51=~Portrait pour la forme humanoide femelle
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@52=~Portrait pour la forme elan femelle
+(Se referer a la section Portraits du Readme pour visualiser les portraits)~
+@60=~mCast2 (Lanceur de sorts de foudre)~
+@61=~mCast5 (Lanceur de sorts blond avec capuche)~
+@62=~mDruid2 (Druide avec peintures faciales) - par Amaurea~
+@63=~mDruid (Druide dans la nature)~
+@64=~mElf1 (Elfe a la peau tres sombre)~
+@65=~mElf2 (Elfe de type lanceur de sorts, au col ouvert) - par Amaurea~
+@66=~mElf3 (Elfe de type lanceur de sorts, en gros plan) - par Amaurea~
+@67=~mGeo01 (Lanceur de sorts avec sceaux et runes) - par Amedyr~
+@68=~mHum7 (Humain aux cheveux roux) - par Amaurea~
+@99=~oBear1 (Brun fonce regardant par dessus son epaule) - par Amaurea~
+@70=~oBear2 (Brun clair souriant, la gueule legerement ouverte) - par Amaurea~
+@71=~oBear3 (Ours a l'air sérieux) - par Amaurea~
+@72=~oCat1 (Jaune et orange tachete avec le poitrail blanc) - par Amaurea~
+@73=~oCat2 (Gris avec des rayures noires autour du cou) - par Amaurea~
+@74=~oCat3 (Gris) - par Amaurea~
+@75=~oDog1 (Chien de chasse gris) - par Amaurea~
+@76=~oDog2 (Chien beige aux poils hirsutes) - par Amaurea~
+@77=~oDog3 (Border Collie) - par Amaurea, dessin de Skye par Caedwyr~
+@78=~oLeop1 (Leopard) - par Amaurea~
+@79=~oLeop2 (Leopard dans la neige) - par Amaurea~
+@80=~oLeop3 (Leopard la langue apparente) - par Amaurea~
+@81=~omMoo1 (Elan la tete baissee) - par Amaurea~
+@82=~omMoo2 (Elan avec la tete de profil) - par Amaurea~
+@83=~omMoo3 (Elan couleur chataigne) - par Amaurea~
+@84=~ofMoo1 (Profil de trois-quarts) - par Amaurea~
+@85=~ofMoo2 (Elan couleur chataigne avec la tete baissee) - par Amaurea~
+@86=~ofMoo3 (Elan couleur chataigne avec la tete relevee) - par Amaurea~
+@87=~oPan1 (Panthere noire au poil brillant) - par Amaurea~
+@88=~oPan2 (Panthere avec la tete penchee sur le cote) - par Amaurea~
+@89=~oPan3 (Panthere avec la gueule legerement ouverte) - par Amaurea~
+@90=~oRat1 (Rat beige) - par Amaurea~
+@91=~oRat2 (Rat sortant la tete d'un trou) - par Amaurea~
+@92=~oRat3 (Rat clair devant de la nourriture) - par Amaurea~
+@93=~oSnak1 (Serpent sortant sa tete de l'herbe) - par Amaurea~
+@94=~oSnak2 (Cobra aux aguets) - par Amaurea~
+@95=~oSnak3 (Cobra avec le cou partiellement gonfle) - par Amaurea~
+@96=~oWolf1 (Loup blanc) - par Amaurea~
+@97=~oWolf2 (Loup blanc et gris) - par Amaurea~
+@98=~oWolf3 (Loup noir) - par Amaurea~

@@ -17,8 +17,8 @@ ALWAYS
       OUTER_SPRINT tra_path ~weidu_external/druidsor/languages~
 
       // convert strings to UTF-8 for BGEE/BG2EE
-      ACTION_DEFINE_ARRAY cdreload BEGIN setup END
-	  ACTION_DEFINE_ARRAY cdnoconvert BEGIN install END
+      ACTION_DEFINE_ARRAY cdreload BEGIN game END
+      ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu END
       LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~druidsor/languages~ out_path = ~weidu_external/druidsor/languages~ noconvert_array = cdnoconvert reload_array = cdreload END
 
     END
@@ -34,20 +34,27 @@ ASK_EVERY_COMPONENT
 
 LANGUAGE ~English~
          ~english~
-         ~druidsor/languages/english/setup.tra~ // English
+         ~druidsor/languages/english/game.tra~ // English
+         ~druidsor/languages/english/weidu.tra~ 
 LANGUAGE ~Francais (Translation by zooloo of the D'Oghmatiques)~
          ~french~
-         ~druidsor/languages/english/setup.tra~ // English
-         ~druidsor/languages/french/setup.tra~ // French
+         ~druidsor/languages/english/game.tra~ // English
+         ~druidsor/languages/english/weidu.tra~ 
+         ~druidsor/languages/french/game.tra~ // French
+         ~druidsor/languages/french/weidu.tra~ 
 LANGUAGE ~Spanish (Translation by lisandro)~
          ~spanish~
-         ~druidsor/languages/english/setup.tra~ // English
-         ~druidsor/languages/spanish/setup.tra~ // spanish
+         ~druidsor/languages/english/game.tra~ // English
+         ~druidsor/languages/english/weidu.tra~ 
+         ~druidsor/languages/spanish/game.tra~ // spanish
+         ~druidsor/languages/spanish/weidu.tra~ 
 		 
 LANGUAGE ~Simplified Chinese (Translation by redrumcha)~
          ~schinese~
-         ~druidsor/languages/english/setup.tra~ // English
-         ~druidsor/languages/schinese/install.tra~ // schinese
+         ~druidsor/languages/english/game.tra~ // English
+         ~druidsor/languages/english/weidu.tra~ 
+         ~druidsor/languages/schinese/game.tra~ // schinese
+         ~druidsor/languages/schinese/weidu.tra~ 
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
